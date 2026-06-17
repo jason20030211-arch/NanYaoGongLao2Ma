@@ -4,44 +4,55 @@
    1. Design Tokens & Variables
    ========================================================================== */
 :root {
-    --primary-red: #8c1d21;      /* 硃砂紅 - 傳統廟宇主色 */
+    --primary-red: #8c1d21;
+    /* 硃砂紅 - 傳統廟宇主色 */
     --primary-red-light: #b0262b;
     --primary-red-dark: #611114;
-    --primary-gold: #d4af37;     /* 琥珀金 - 媽祖神光與莊嚴 */
+    --primary-gold: #d4af37;
+    /* 琥珀金 - 媽祖神光與莊嚴 */
     --primary-gold-light: #e5c158;
     --primary-gold-dark: #a3821a;
-    
-    --bg-dark: #120c0c;          /* 玄鐵黑 - 深沉莊嚴底色 */
-    --bg-dark-card: #1c1414;     /* 暗色卡片背景 */
-    --bg-light: #faf8f5;         /* 暖宣紙白 - 優雅舒適閱讀底色 */
-    --bg-light-card: #ffffff;    /* 亮色卡片背景 */
-    --accent-cream: #f4efe6;     /* 廟宇石雕米白 */
-    
-    --text-dark: #2c2220;        /* 炭黑文字 */
-    --text-muted: #6b5e5c;       /* 灰褐文字 */
-    --text-light: #e6dfdd;       /* 暗色背景下的亮文字 */
-    --text-gold: #d4af37;        /* 金色強調文字 */
-    
+
+    --bg-dark: #120c0c;
+    /* 玄鐵黑 - 深沉莊嚴底色 */
+    --bg-dark-card: #1c1414;
+    /* 暗色卡片背景 */
+    --bg-light: #faf8f5;
+    /* 暖宣紙白 - 優雅舒適閱讀底色 */
+    --bg-light-card: #ffffff;
+    /* 亮色卡片背景 */
+    --accent-cream: #f4efe6;
+    /* 廟宇石雕米白 */
+
+    --text-dark: #2c2220;
+    /* 炭黑文字 */
+    --text-muted: #6b5e5c;
+    /* 灰褐文字 */
+    --text-light: #e6dfdd;
+    /* 暗色背景下的亮文字 */
+    --text-gold: #d4af37;
+    /* 金色強調文字 */
+
     --font-serif: 'Noto Serif TC', serif;
     --font-sans: 'Outfit', 'Noto Sans TC', sans-serif;
-    
+
     --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     --transition-fast: all 0.2s ease;
-    
+
     --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.03);
     --shadow-md: 0 12px 30px rgba(140, 29, 33, 0.06);
     --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.15);
-    
+
     --radius-sm: 6px;
     --radius-md: 12px;
     --radius-lg: 24px;
-    
+
     --container-width: 1280px;
     --nav-height: 80px;
 }
 
 /* ==========================================================================
-   2. Reset & General Styles
+   2. Reset & General Styles hero_temp
    ========================================================================== */
 * {
     box-sizing: border-box;
@@ -62,7 +73,13 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6, .serif {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.serif {
     font-family: var(--font-serif);
     font-weight: 700;
     line-height: 1.3;
@@ -84,7 +101,10 @@ ul {
     list-style: none;
 }
 
-button, input, textarea, select {
+button,
+input,
+textarea,
+select {
     font-family: inherit;
     font-size: inherit;
     color: inherit;
@@ -97,14 +117,17 @@ button, input, textarea, select {
 ::-webkit-scrollbar {
     width: 10px;
 }
+
 ::-webkit-scrollbar-track {
     background: var(--accent-cream);
 }
+
 ::-webkit-scrollbar-thumb {
     background: var(--primary-red);
     border-radius: 5px;
     border: 2px solid var(--accent-cream);
 }
+
 ::-webkit-scrollbar-thumb:hover {
     background: var(--primary-red-light);
 }
@@ -305,8 +328,8 @@ section {
 .hero {
     height: 100vh;
     min-height: 650px;
-    background: linear-gradient(rgba(18, 12, 12, 0.6), rgba(18, 12, 12, 0.85)), 
-                url('assets/images/hero_temple.png') no-repeat center center/cover;
+    background: linear-gradient(rgba(18, 12, 12, 0.6), rgba(18, 12, 12, 0.85)),
+        url('assets/images/03.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     color: var(--text-light);
@@ -481,7 +504,7 @@ section {
    ========================================================================== */
 .belief-section {
     background: linear-gradient(rgba(18, 12, 12, 0.97), rgba(18, 12, 12, 0.98)),
-                url('assets/images/hero_temple.png') no-repeat center center/cover;
+        url('assets/images/hero_temple.png') no-repeat center center/cover;
     background-attachment: fixed;
     color: var(--text-light);
 }
@@ -1092,7 +1115,9 @@ section {
     margin-bottom: 8px;
 }
 
-.form-input, .form-select, .form-textarea {
+.form-input,
+.form-select,
+.form-textarea {
     width: 100%;
     padding: 12px 16px;
     background-color: var(--accent-cream);
@@ -1102,7 +1127,9 @@ section {
     transition: var(--transition-fast);
 }
 
-.form-input:focus, .form-select:focus, .form-textarea:focus {
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
     border-color: var(--primary-red);
     background-color: #ffffff;
     box-shadow: 0 0 0 3px rgba(140, 29, 33, 0.1);
@@ -1351,8 +1378,13 @@ section {
    12. Animations
    ========================================================================== */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeInUp {
@@ -1360,6 +1392,7 @@ section {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -1371,6 +1404,7 @@ section {
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -1378,13 +1412,25 @@ section {
 }
 
 @keyframes rotate {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 /* Reveal Scroll Elements styling */
@@ -1408,26 +1454,33 @@ section {
         grid-template-columns: 1fr;
         gap: 40px;
     }
+
     .org-history {
         padding-right: 0;
     }
+
     .belief-layout {
         grid-template-columns: 1fr;
     }
+
     .sections-list {
         max-height: 300px;
     }
+
     .culture-content {
         grid-template-columns: 1fr;
         gap: 30px;
     }
+
     .digital-grid {
         grid-template-columns: 1fr;
         gap: 40px;
     }
+
     .contact-layout {
         display: block;
     }
+
     .membership-benefits {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -1438,15 +1491,15 @@ section {
     :root {
         --nav-height: 70px;
     }
-    
+
     .hero-title {
         font-size: 2.8rem;
     }
-    
+
     .hero-desc {
         font-size: 1.1rem;
     }
-    
+
     .nav-menu {
         position: fixed;
         top: var(--nav-height);
@@ -1461,24 +1514,24 @@ section {
         transition: var(--transition-smooth);
         border-top: 1px solid rgba(255, 255, 255, 0.05);
     }
-    
+
     .nav-menu.active {
         left: 0;
     }
-    
+
     .mobile-nav-toggle {
         display: block;
     }
-    
+
     .section-title {
         font-size: 2rem;
     }
-    
+
     .form-group-row {
         grid-template-columns: 1fr;
         gap: 0;
     }
-    
+
     .footer-grid {
         grid-template-columns: 1fr;
         gap: 40px;

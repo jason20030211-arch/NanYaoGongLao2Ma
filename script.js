@@ -11,7 +11,7 @@
  */
 
 // ==========================================================================
-// 1. 社群媒體連結配置 (User Customizable Social Links)
+// 1. 社群媒體連結配置 (User Customizable Social Links) hero_temp
 // ==========================================================================
 const SOCIAL_LINKS = {
     facebook: "https://www.facebook.com/changhua2mazu",
